@@ -1,0 +1,44 @@
+package com.mrprk;
+
+   class Encapsulation {
+	private String name;
+	private int roll;
+	private int age;
+	
+	public int getAge() {
+		return age;
+	}
+	
+	public String getName() {
+		return name;
+	}
+	
+	public int getRoll() {
+		return roll;
+	}
+	
+	public void setAge(int newage) {
+		age=newage;
+	}
+	
+	public void setRoll(int newRoll) {
+		roll=newRoll;
+	}
+	
+	public void setName(String newName) {
+		name=newName;
+	}
+}
+
+public class TestEncapsulation{
+	public static void main(String []args) {
+		Encapsulation obj = new Encapsulation();
+		obj.setName("Atim");
+		obj.setRoll(1001);
+		obj.setAge(24);
+		
+		System.out.println(obj.getName());
+		System.out.println(obj.getAge());
+		System.out.println(obj.getRoll());
+	}
+}
